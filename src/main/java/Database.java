@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    // Use a named in-memory database
-    private static final String DB_URL = "jdbc:h2:mem:taskdb;DB_CLOSE_DELAY=-1";
+    // Use a file-based H2 database
+    private static final String DB_URL = "jdbc:h2:./taskdb;DB_CLOSE_DELAY=-1";
 
     static {
         try {
